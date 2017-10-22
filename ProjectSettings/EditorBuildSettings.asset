@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/UnityARKitPlugin/Examples/FocusSquare/FocusSquareScene.unity
     guid: 3c9ef824a7b95400bade362484e9b6af
+  - enabled: 0
+    path: Assets/UnityARKitPlugin/Examples/AddRemoveAnchorExample/AddRemoveAnchorScene.unity
+    guid: c59061d8b0a364aa58f20007a956f23a
