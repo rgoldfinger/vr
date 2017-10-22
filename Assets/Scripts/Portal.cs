@@ -21,6 +21,7 @@ public class Portal : MonoBehaviour {
         if (other.CompareTag ("MainCamera")) {
             // Use xor operator to toggle the ARWorld layer in the arCam's culling mask.
             arCam.cullingMask ^= 1 << LayerMask.NameToLayer("ARWorld");
+            arCam.cullingMask ^= 1 << LayerMask.NameToLayer("Plane");
         }
     }
 }
