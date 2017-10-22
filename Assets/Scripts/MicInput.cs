@@ -12,13 +12,6 @@ public class MicInput : MonoBehaviour
         source.clip = Microphone.Start(null, true, 10, 44100);
         source.loop = true;
         while (!(Microphone.GetPosition(null) > 0)) { }
-        //Debug.Log("start playing... position is " + Microphone.GetPosition(null));
         source.Play();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
