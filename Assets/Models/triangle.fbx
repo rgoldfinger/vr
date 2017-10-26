@@ -10,10 +10,10 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2017
 		Month: 10
-		Day: 23
-		Hour: 23
-		Minute: 47
-		Second: 4
+		Day: 26
+		Hour: 11
+		Minute: 32
+		Second: 8
 		Millisecond: 0
 	}
 	Creator: "FBX SDK/FBX Plugins version 2016.1"
@@ -30,8 +30,8 @@ FBXHeaderExtension:  {
 			Comment: ""
 		}
 		Properties70:  {
-			P: "DocumentUrl", "KString", "Url", "", "/var/folders/rw/19k4573j7y5cj2cdmq0q9xmh0000gn/T/com.sketchup.SketchUp.2017.rogergoldfingerr66EBP.fbx"
-			P: "SrcDocumentUrl", "KString", "Url", "", "/var/folders/rw/19k4573j7y5cj2cdmq0q9xmh0000gn/T/com.sketchup.SketchUp.2017.rogergoldfingerr66EBP.fbx"
+			P: "DocumentUrl", "KString", "Url", "", "/var/folders/rw/19k4573j7y5cj2cdmq0q9xmh0000gn/T/com.sketchup.SketchUp.2017.rogergoldfinger9kHmtF.fbx"
+			P: "SrcDocumentUrl", "KString", "Url", "", "/var/folders/rw/19k4573j7y5cj2cdmq0q9xmh0000gn/T/com.sketchup.SketchUp.2017.rogergoldfinger9kHmtF.fbx"
 			P: "Original", "Compound", "", ""
 			P: "Original|ApplicationVendor", "KString", "", "", ""
 			P: "Original|ApplicationName", "KString", "", "", ""
@@ -77,7 +77,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 106102876184832, "", "Scene" {
+	Document: 106377754075648, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -227,12 +227,12 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 140373822155744, "Geometry::", "Mesh" {
-		Vertices: *30 {
-			a: 5.89449475457205,0,-0.49910475156741,0.496234576815198,0,-0.496234576815198,0.496234576815198,0,-0.49910475156741,0,0,-6.70646968089167,0.466234576815198,0,-6.20736492932426,0,0,-0,6.4,0,-6.70646968089167,5.86449475457205,0,-6.20736492932426,0.496197171249382,0,-0.496234576815198,6.4,0,-0
+	Geometry: 140421369800032, "Geometry::", "Mesh" {
+		Vertices: *18 {
+			a: -0.1875,0,-62.6187973355372,-80.0281932601013,3.07090616281396e-14,32.7009313426417,-106.259444709425,2.7147280556808e-14,43.4531473738877,-0.0509471594378681,5.6843418860808e-14,-47.2763147580216,105.884444709425,2.78857829941204e-14,43.4531473738877,79.9262989412255,3.07090616281396e-14,32.7009313426417
 		} 
-		PolygonVertexIndex: *30 {
-			a: 0,1,-3,3,4,-6,4,3,-7,4,6,-8,7,6,-1,5,8,-10,8,5,-5,9,8,-2,9,1,-1,9,0,-7
+		PolygonVertexIndex: *18 {
+			a: 0,1,-3,1,0,-4,3,0,-5,3,4,-6,1,4,-3,4,1,-6
 		} 
 		GeometryVersion: 124
 		LayerElementNormal: 0 {
@@ -240,11 +240,11 @@ Objects:  {
 			Name: ""
 			MappingInformationType: "ByVertice"
 			ReferenceInformationType: "Direct"
-			Normals: *30 {
-				a: 0,-1,-0,0,-1,-0,0,-1,-0,0,-1,-0,0,-1,-0,0,-1,-0,0,-1,-0,0,-1,-0,0,-1,-0,0,-1,-0
+			Normals: *18 {
+				a: 2.47802926542156e-18,-1,9.98836149540269e-17,2.47802926542156e-18,-1,9.98836149540269e-17,2.47802926542156e-18,-1,9.98836149540269e-17,2.47802926542156e-18,-1,9.98836149540269e-17,2.47802926542156e-18,-1,9.98836149540269e-17,2.47802926542156e-18,-1,9.98836149540269e-17
 			} 
-			NormalsW: *10 {
-				a: 1,1,1,1,1,1,1,1,1,1
+			NormalsW: *6 {
+				a: 1,1,1,1,1,1
 			} 
 		}
 		LayerElementUV: 0 {
@@ -252,11 +252,11 @@ Objects:  {
 			Name: ""
 			MappingInformationType: "ByPolygonVertex"
 			ReferenceInformationType: "IndexToDirect"
-			UV: *20 {
-				a: -232.066722620947,19.6497933687957,-19.5367943628031,19.5367943628031,-19.5367943628031,19.6497933687957,0,264.034239405184,-18.3556920005984,244.384446036388,0,0,-251.968503937008,264.034239405184,-230.885620258742,244.384446036388,-19.5353217027316,19.5367943628031,-251.968503937008,0
+			UV: *12 {
+				a: 0.1875,62.6187973355372,80.0281932601013,-32.7009313426417,106.259444709425,-43.4531473738877,0.0509471594378681,47.2763147580216,-105.884444709425,-43.4531473738877,-79.9262989412255,-32.7009313426417
 			} 
-			UVIndex: *30 {
-				a: 0,1,2,3,4,5,4,3,6,4,6,7,7,6,0,5,8,9,8,5,4,9,8,1,9,1,0,9,0,6
+			UVIndex: *18 {
+				a: 0,1,2,1,0,3,3,0,4,3,4,5,1,4,2,4,1,5
 			} 
 		}
 		LayerElementMaterial: 0 {
@@ -264,8 +264,8 @@ Objects:  {
 			Name: ""
 			MappingInformationType: "ByPolygon"
 			ReferenceInformationType: "IndexToDirect"
-			Materials: *10 {
-				a: 0,0,0,0,0,0,0,0,0,0
+			Materials: *6 {
+				a: 0,0,0,0,0,0
 			} 
 		}
 		Layer: 0 {
@@ -288,7 +288,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 140373852668416, "Model::Model", "Null" {
+	Model: 140421377066496, "Model::Model", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
@@ -296,7 +296,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 140373825742848, "Model::Mesh1", "Mesh" {
+	Model: 140421380692992, "Model::Mesh1", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
@@ -305,19 +305,19 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Material: 140373947211200, "Material::FrontColor", "" {
+	Material: 140421520952896, "Material::FrontColor", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
 		Properties70:  {
 			P: "AmbientColor", "Color", "", "A",0,0,0
-			P: "DiffuseColor", "Color", "", "A",1,1,1
+			P: "DiffuseColor", "Color", "", "A",0.882352941176471,0.882352941176471,0.784313725490196
 			P: "TransparentColor", "Color", "", "A",1,1,1
 			P: "SpecularColor", "Color", "", "A",0.33,0.33,0.33
 			P: "ReflectionFactor", "Number", "", "A",0
 			P: "Emissive", "Vector3D", "Vector", "",0,0,0
 			P: "Ambient", "Vector3D", "Vector", "",0,0,0
-			P: "Diffuse", "Vector3D", "Vector", "",1,1,1
+			P: "Diffuse", "Vector3D", "Vector", "",0.882352941176471,0.882352941176471,0.784313725490196
 			P: "Specular", "Vector3D", "Vector", "",0.33,0.33,0.33
 			P: "Shininess", "double", "Number", "",20
 			P: "Opacity", "double", "Number", "",1
@@ -332,16 +332,16 @@ Objects:  {
 Connections:  {
 	
 	;Model::Model, Model::RootNode
-	C: "OO",140373852668416,0
+	C: "OO",140421377066496,0
 	
 	;Model::Mesh1, Model::Model
-	C: "OO",140373825742848,140373852668416
+	C: "OO",140421380692992,140421377066496
 	
 	;Geometry::, Model::Mesh1
-	C: "OO",140373822155744,140373825742848
+	C: "OO",140421369800032,140421380692992
 	
 	;Material::FrontColor, Model::Mesh1
-	C: "OO",140373947211200,140373825742848
+	C: "OO",140421520952896,140421380692992
 }
 ;Takes section
 ;----------------------------------------------------
