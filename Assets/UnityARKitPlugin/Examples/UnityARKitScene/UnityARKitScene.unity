@@ -5376,6 +5376,20 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 198000012952508202, guid: 96730f8640590934eacb6f860058e7f9,
+        type: 2}
+      propertyPath: lengthInSec
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000012952508202, guid: 96730f8640590934eacb6f860058e7f9,
+        type: 2}
+      propertyPath: EmissionModule.m_Bursts.Array.data[2].time
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010059211136, guid: 96730f8640590934eacb6f860058e7f9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96730f8640590934eacb6f860058e7f9, type: 2}
   m_IsPrefabParent: 0
@@ -6480,7 +6494,7 @@ AudioEchoFilter:
   m_GameObject: {fileID: 1756542759}
   m_Enabled: 1
   m_Delay: 100
-  m_DecayRatio: 0.6
+  m_DecayRatio: 0.3
   m_WetMix: 1
   m_DryMix: 1
 --- !u!1 &1830418450
