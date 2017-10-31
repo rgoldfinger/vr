@@ -31,7 +31,7 @@ public class PortalExit : MonoBehaviour {
         GetComponent<BoxCollider>().isTrigger = false;
         tunnel.GetComponent<Tunnel>().StartCreating();
         arCam.cullingMask ^= 1 << LayerMask.NameToLayer("ARWorld");
-        arCam.cullingMask ^= 1 << LayerMask.NameToLayer("Skybox");
+        arCam.cullingMask ^= 1 << LayerMask.NameToLayer("newskybox");
         yield return new WaitForSeconds(5);
         tunnel.GetComponent<Tunnel>().StopCreating();
 

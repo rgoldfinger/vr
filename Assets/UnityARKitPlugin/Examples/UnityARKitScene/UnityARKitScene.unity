@@ -184,7 +184,7 @@ Camera:
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294954751
+    m_Bits: 4294938367
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -515,7 +515,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294964735
+    m_Bits: 4294964479
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 7334fc921de2d43748093e6b3908cd0e, type: 2}
   m_TargetDisplay: 0
@@ -4382,6 +4382,31 @@ Prefab:
       propertyPath: ShapeModule.radiusThickness
       value: 1.0000
       objectReference: {fileID: 0}
+    - target: {fileID: 198000012283690144, guid: 96b2ec0239d11fa4b9792311efceb8ed,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000012283690144, guid: 96b2ec0239d11fa4b9792311efceb8ed,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000012283690144, guid: 96b2ec0239d11fa4b9792311efceb8ed,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000012283690144, guid: 96b2ec0239d11fa4b9792311efceb8ed,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000012283690144, guid: 96b2ec0239d11fa4b9792311efceb8ed,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96b2ec0239d11fa4b9792311efceb8ed, type: 2}
   m_IsPrefabParent: 0
@@ -4438,7 +4463,7 @@ GameObject:
   - component: {fileID: 631005341}
   - component: {fileID: 631005340}
   - component: {fileID: 631005339}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4529,7 +4554,7 @@ GameObject:
   - component: {fileID: 691320936}
   - component: {fileID: 691320935}
   - component: {fileID: 691320934}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4945,7 +4970,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 826922433}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.99999994, y: 0.99999994, z: 1}
@@ -5113,7 +5138,7 @@ GameObject:
   - component: {fileID: 963123875}
   - component: {fileID: 963123874}
   - component: {fileID: 963123873}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6224,7 +6249,7 @@ GameObject:
   - component: {fileID: 1358029635}
   - component: {fileID: 1358029634}
   - component: {fileID: 1358029633}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6677,7 +6702,7 @@ GameObject:
   - component: {fileID: 1830418454}
   - component: {fileID: 1830418453}
   - component: {fileID: 1830418452}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6768,7 +6793,7 @@ GameObject:
   - component: {fileID: 1869256124}
   - component: {fileID: 1869256123}
   - component: {fileID: 1869256122}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6856,7 +6881,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1921669212}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: Sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}

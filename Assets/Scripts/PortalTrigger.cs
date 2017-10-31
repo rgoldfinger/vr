@@ -27,7 +27,7 @@ public class PortalTrigger : MonoBehaviour
         // Use xor operator to toggle the ARWorld layer in the arCam's culling mask.
         arCam.cullingMask ^= 1 << LayerMask.NameToLayer("Plane");
         arCam.cullingMask ^= 1 << LayerMask.NameToLayer("Tunnel");
-        arCam.cullingMask ^= 1 << LayerMask.NameToLayer("Skybox");
+        arCam.cullingMask ^= 1 << LayerMask.NameToLayer("newskybox");
         GetComponent<BoxCollider>().isTrigger = false;
         tunnel.GetComponent<Tunnel>().StopCreating();
 
