@@ -13,13 +13,13 @@ public class Tunnel : MonoBehaviour {
 
     void CreateThing()
     {
-        Spawn(80);
+        Spawn(50);
     }
 
     void Spawn(int loc)
     {
         GameObject thing = Instantiate(triangle, new Vector3(0, 0, loc), triangle.transform.rotation);
-        thing.GetComponent<TriangleMover>().speed = Random.Range(16, 24);
+        thing.GetComponent<TriangleMover>().speed = Random.Range(18, 22);
         Renderer rend = thing.GetComponent<Renderer>();
         rend.material.color = colors[Random.Range(0, 2)];
     }
@@ -30,8 +30,8 @@ public class Tunnel : MonoBehaviour {
     }
     public void StartCreating()
     {
-        InvokeRepeating("CreateThing", 0, 1);
-        for (var i = 10; i < 100; i += 10)
+        InvokeRepeating("CreateThing", 0, 0.5f);
+        for (var i = 10; i < 50; i += 5)
         {
             Spawn((i));
         }

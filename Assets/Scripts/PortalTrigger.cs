@@ -29,9 +29,9 @@ public class PortalTrigger : MonoBehaviour
         arCam.cullingMask ^= 1 << LayerMask.NameToLayer("Tunnel");
         arCam.cullingMask ^= 1 << LayerMask.NameToLayer("newskybox");
         GetComponent<BoxCollider>().isTrigger = false;
-        tunnel.GetComponent<Tunnel>().StopCreating();
 
         yield return new WaitForSeconds(5);
+        tunnel.GetComponent<Tunnel>().StopCreating();
         arCam.cullingMask ^= 1 << LayerMask.NameToLayer("ARWorld");
 
         yield return new WaitForSeconds(15);
