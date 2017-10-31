@@ -6,6 +6,7 @@ public class TriangleMover : MonoBehaviour
 {
 
     public float speed;
+    public float endLocation;
 
     // Use this for initialization
     void Start()
@@ -16,7 +17,7 @@ public class TriangleMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 destination = new Vector3(0, 0, -100);
+        Vector3 destination = new Vector3(0, 0, endLocation);
         Vector3 t = Camera.main.transform.position + destination;
 
         float step = speed * Time.deltaTime;
