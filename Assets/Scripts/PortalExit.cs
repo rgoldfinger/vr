@@ -19,7 +19,7 @@ public class PortalExit : MonoBehaviour {
     {
         if (other.CompareTag("MainCamera"))
         {
-            StartCoroutine(ExitTunnel());
+            //StartCoroutine(ExitTunnel());
         }
     }
 
