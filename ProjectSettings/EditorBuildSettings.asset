@@ -29,3 +29,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/UnityARKitPlugin/Examples/AddRemoveAnchorExample/AddRemoveAnchorScene.unity
     guid: c59061d8b0a364aa58f20007a956f23a
+  - enabled: 0
+    path: Assets/pptv_outline-space.unity
+    guid: 3c2dd29790bf1425c96f850b9f1fa3ef
+  - enabled: 0
+    path: Assets/pptv_space.unity
+    guid: 6d54cd8f395ea45c8a5d04e1e9333e81
+  m_configObjects: {}
