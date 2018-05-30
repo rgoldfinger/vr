@@ -9,6 +9,7 @@ public class MediaPlayer : MonoBehaviour {
     private VideoSource videoSource;
     public VideoClip[] videoClips;
     public VideoClip staticClip;
+    public VideoClip outroStaticClip;
     public GameObject screen;
 
     private AudioSource audioSource;
@@ -19,7 +20,7 @@ public class MediaPlayer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        waitForTime = System.DateTime.Now.AddSeconds(30);
+        waitForTime = System.DateTime.Now.AddSeconds(60);
         mediaStarted = false;
         screen.SetActive(false);
 
@@ -85,9 +86,6 @@ public class MediaPlayer : MonoBehaviour {
         Debug.Log("Done Playing Static Video");
 
         // Start random video
-
-        // TODO get random clip based on time
-        // current minutes mod videoClips.length
         int index = System.DateTime.Now.Minute % videoClips.Length;
         videoPlayer.clip = videoClips[index];
         videoPlayer.Prepare();
@@ -110,6 +108,30 @@ public class MediaPlayer : MonoBehaviour {
         }
 
         Debug.Log("Done Playing Random Video");
+
+        // Start outro static video
+        videoPlayer.clip = outroStaticClip;
+        videoPlayer.Prepare();
+
+        //Wait until video is prepared
+        while (!videoPlayer.isPrepared)
+        {
+            Debug.Log("Preparing Static Video");
+            yield return null;
+        }
+
+        //Play Video
+        videoPlayer.Play();
+
+
+        Debug.Log("Playing Static Video");
+        while (videoPlayer.isPlaying)
+        {
+            yield return null;
+        }
+
+        Debug.Log("Done Playing Static Video");
+        screen.SetActive(false);
     }
 }
 
