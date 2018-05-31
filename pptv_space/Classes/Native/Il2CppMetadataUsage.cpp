@@ -8244,6 +8244,8 @@ String_t* _stringLiteral1061709674;
 String_t* _stringLiteral401642541;
 String_t* _stringLiteral3953711043;
 String_t* _stringLiteral4002944894;
+String_t* _stringLiteral551927144;
+String_t* _stringLiteral2707269980;
 String_t* _stringLiteral886981821;
 String_t* _stringLiteral3410521211;
 String_t* _stringLiteral3858675777;
@@ -8493,7 +8495,7 @@ String_t* _stringLiteral1864861238;
 String_t* _stringLiteral3926843441;
 String_t* _stringLiteral1132744560;
 String_t* _stringLiteral46997234;
-extern void** const g_MetadataUsages[8474] = 
+extern void** const g_MetadataUsages[8476] = 
 {
 	(void**)(&Contraction_t1589275354_0_0_0_var),
 	(void**)(&Level2Map_t3640798870_0_0_0_var),
@@ -16720,6 +16722,8 @@ extern void** const g_MetadataUsages[8474] =
 	(void**)(&_stringLiteral401642541),
 	(void**)(&_stringLiteral3953711043),
 	(void**)(&_stringLiteral4002944894),
+	(void**)(&_stringLiteral551927144),
+	(void**)(&_stringLiteral2707269980),
 	(void**)(&_stringLiteral886981821),
 	(void**)(&_stringLiteral3410521211),
 	(void**)(&_stringLiteral3858675777),
@@ -21485,9 +21489,9 @@ extern const uint32_t MD5CryptoServiceProvider_ProcessFinalBlock_m2241588515_Met
 extern const uint32_t MD5SHA1_CreateSignature_m3583449066_MetadataUsageId = 4512;
 extern const uint32_t MD5SHA1_HashFinal_m4115488658_MetadataUsageId = 4513;
 extern const uint32_t MD5SHA1_VerifySignature_m915115209_MetadataUsageId = 4514;
-extern const uint32_t MediaPlayer_playIntroAudio_m3608917595_MetadataUsageId = 4515;
-extern const uint32_t MediaPlayer_playVideo_m3724194916_MetadataUsageId = 4516;
-extern const uint32_t MediaPlayer_Start_m207418251_MetadataUsageId = 4517;
+extern const uint32_t MediaPlayer_HandleRemote_m3873689799_MetadataUsageId = 4515;
+extern const uint32_t MediaPlayer_playIntroAudio_m3608917595_MetadataUsageId = 4516;
+extern const uint32_t MediaPlayer_playVideo_m3724194916_MetadataUsageId = 4517;
 extern const uint32_t MediaPlayer_Update_m3492092940_MetadataUsageId = 4518;
 extern const uint32_t MemberAccessException__ctor_m2501221062_MetadataUsageId = 4519;
 extern const uint32_t MemberInfo_t_CustomAttributesCacheGenerator_MetadataUsageId = 4520;

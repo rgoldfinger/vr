@@ -11719,6 +11719,7 @@ extern "C" void LookAtCamera_LookCam_m1339097857 ();
 extern "C" void MediaPlayer__ctor_m888206547 ();
 extern "C" void MediaPlayer_Start_m207418251 ();
 extern "C" void MediaPlayer_Update_m3492092940 ();
+extern "C" void MediaPlayer_HandleRemote_m3873689799 ();
 extern "C" void MediaPlayer_playIntroAudio_m3608917595 ();
 extern "C" void MediaPlayer_playVideo_m3724194916 ();
 extern "C" void U3CplayIntroAudioU3Ec__Iterator0__ctor_m3903914424 ();
@@ -12362,7 +12363,7 @@ extern "C" void U3CLoadDeviceU3Ec__Iterator0_System_Collections_Generic_IEnumera
 extern "C" void U3CLoadDeviceU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m760405286 ();
 extern "C" void U3CLoadDeviceU3Ec__Iterator0_Dispose_m1787255812 ();
 extern "C" void U3CLoadDeviceU3Ec__Iterator0_Reset_m1523088786 ();
-extern const Il2CppMethodPointer g_MethodPointers[12343] = 
+extern const Il2CppMethodPointer g_MethodPointers[12344] = 
 {
 	Locale_GetText_m3374010885,
 	Locale_GetText_m1601577974,
@@ -24064,6 +24065,7 @@ extern const Il2CppMethodPointer g_MethodPointers[12343] =
 	MediaPlayer__ctor_m888206547,
 	MediaPlayer_Start_m207418251,
 	MediaPlayer_Update_m3492092940,
+	MediaPlayer_HandleRemote_m3873689799,
 	MediaPlayer_playIntroAudio_m3608917595,
 	MediaPlayer_playVideo_m3724194916,
 	U3CplayIntroAudioU3Ec__Iterator0__ctor_m3903914424,

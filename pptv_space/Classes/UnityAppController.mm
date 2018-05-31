@@ -299,14 +299,15 @@ extern "C" void UnityRequestQuit()
     commandCenter.playCommand.enabled = YES;
     [commandCenter.playCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent *event) {
         ::printf("-> playCommand()\n");
-        [self.player play];
+        UnitySendMessage("MediaPlayer", "HandleRemote", "start");
+//        [self.player play];
         return MPRemoteCommandHandlerStatusSuccess; //return MPRemoteCommandHandlerStatusCommandFailed;
     } ];
 
     commandCenter.pauseCommand.enabled = YES;
     [commandCenter.pauseCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent *event) {
         ::printf("-> pauseCommand()\n");
-        [self.player pause];
+        UnitySendMessage("MediaPlayer", "HandleRemote", "start");
         return MPRemoteCommandHandlerStatusSuccess;
     } ];
     
@@ -314,6 +315,7 @@ extern "C" void UnityRequestQuit()
     [commandCenter.togglePlayPauseCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent *event) {
         // Begin playing the current track.
         ::printf("-> togglePlayPauseCommand()\n");
+        UnitySendMessage("MediaPlayer", "HandleRemote", "start");
         return MPRemoteCommandHandlerStatusSuccess;
     } ];
     

@@ -17,28 +17,35 @@ public class MediaPlayer : MonoBehaviour {
 
     private System.DateTime waitForTime;
     private bool mediaStarted;
+    private bool shouldStartMedia;
 
 	// Use this for initialization
 	void Start () {
-        waitForTime = System.DateTime.Now.AddSeconds(30);
         mediaStarted = false;
+        shouldStartMedia = true;
         screen.SetActive(false);
-
 	}
 	
 	// Update is called once per frame
 	void Update () {
         System.DateTime now = System.DateTime.Now;
         
-        if (mediaStarted == false && now.Second % 28 == 0 &&  System.DateTime.Compare(waitForTime, now) == 1) {
+        if (mediaStarted == false && shouldStartMedia == true && now.Second % 10 == 0) {
             mediaStarted = true;
+            Debug.Log("Starting from remote -------------------------------------");
             StartCoroutine(playIntroAudio());
         }
-        if (Input.touchCount > 1 && mediaStarted == false) {
-            mediaStarted = true;
-            StartCoroutine(playIntroAudio());
-        }
+
 	}
+
+    void HandleRemote (string message) 
+    {
+        if (message == "start" && mediaStarted == false) {
+            Debug.Log("Starting from remote -------------------------------------");
+            shouldStartMedia = true;
+            //StartCoroutine(playIntroAudio());
+        }
+    }
     
     IEnumerator playIntroAudio()
     {

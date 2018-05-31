@@ -3992,6 +3992,8 @@ public:
 	DateTime_t3738529785  ___waitForTime_10;
 	// System.Boolean MediaPlayer::mediaStarted
 	bool ___mediaStarted_11;
+	// System.Boolean MediaPlayer::shouldStartMedia
+	bool ___shouldStartMedia_12;
 
 public:
 	inline static int32_t get_offset_of_videoPlayer_2() { return static_cast<int32_t>(offsetof(MediaPlayer_t1714676465, ___videoPlayer_2)); }
@@ -4079,6 +4081,14 @@ public:
 	inline void set_mediaStarted_11(bool value)
 	{
 		___mediaStarted_11 = value;
+	}
+
+	inline static int32_t get_offset_of_shouldStartMedia_12() { return static_cast<int32_t>(offsetof(MediaPlayer_t1714676465, ___shouldStartMedia_12)); }
+	inline bool get_shouldStartMedia_12() const { return ___shouldStartMedia_12; }
+	inline bool* get_address_of_shouldStartMedia_12() { return &___shouldStartMedia_12; }
+	inline void set_shouldStartMedia_12(bool value)
+	{
+		___shouldStartMedia_12 = value;
 	}
 };
 
@@ -10784,7 +10794,7 @@ extern const int32_t g_FieldOffsetTable2124[8] =
 	ParticleMenu_t4214032109::get_offset_of_navigationDetails_9(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2125 = { sizeof (MediaPlayer_t1714676465), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable2125[10] = 
+extern const int32_t g_FieldOffsetTable2125[11] = 
 {
 	MediaPlayer_t1714676465::get_offset_of_videoPlayer_2(),
 	MediaPlayer_t1714676465::get_offset_of_videoSource_3(),
@@ -10796,6 +10806,7 @@ extern const int32_t g_FieldOffsetTable2125[10] =
 	MediaPlayer_t1714676465::get_offset_of_introClip_9(),
 	MediaPlayer_t1714676465::get_offset_of_waitForTime_10(),
 	MediaPlayer_t1714676465::get_offset_of_mediaStarted_11(),
+	MediaPlayer_t1714676465::get_offset_of_shouldStartMedia_12(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2126 = { sizeof (U3CplayIntroAudioU3Ec__Iterator0_t2509438007), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable2126[4] = 

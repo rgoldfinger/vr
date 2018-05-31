@@ -954,8 +954,10 @@ extern const RuntimeMethod* U3CInstantLandOnStartU3Ec__Iterator0_Reset_m27578971
 extern const uint32_t U3CInstantLandOnStartU3Ec__Iterator0_Reset_m27578971_MetadataUsageId;
 extern const uint32_t LookAtCamera_Start_m741071103_MetadataUsageId;
 extern RuntimeClass* DateTime_t3738529785_il2cpp_TypeInfo_var;
-extern const uint32_t MediaPlayer_Start_m207418251_MetadataUsageId;
+extern String_t* _stringLiteral551927144;
 extern const uint32_t MediaPlayer_Update_m3492092940_MetadataUsageId;
+extern String_t* _stringLiteral2707269980;
+extern const uint32_t MediaPlayer_HandleRemote_m3873689799_MetadataUsageId;
 extern RuntimeClass* U3CplayIntroAudioU3Ec__Iterator0_t2509438007_il2cpp_TypeInfo_var;
 extern const uint32_t MediaPlayer_playIntroAudio_m3608917595_MetadataUsageId;
 extern RuntimeClass* U3CplayVideoU3Ec__Iterator1_t124137848_il2cpp_TypeInfo_var;
@@ -17404,6 +17406,8 @@ public:
 	DateTime_t3738529785  ___waitForTime_10;
 	// System.Boolean MediaPlayer::mediaStarted
 	bool ___mediaStarted_11;
+	// System.Boolean MediaPlayer::shouldStartMedia
+	bool ___shouldStartMedia_12;
 
 public:
 	inline static int32_t get_offset_of_videoPlayer_2() { return static_cast<int32_t>(offsetof(MediaPlayer_t1714676465, ___videoPlayer_2)); }
@@ -17491,6 +17495,14 @@ public:
 	inline void set_mediaStarted_11(bool value)
 	{
 		___mediaStarted_11 = value;
+	}
+
+	inline static int32_t get_offset_of_shouldStartMedia_12() { return static_cast<int32_t>(offsetof(MediaPlayer_t1714676465, ___shouldStartMedia_12)); }
+	inline bool get_shouldStartMedia_12() const { return ___shouldStartMedia_12; }
+	inline bool* get_address_of_shouldStartMedia_12() { return &___shouldStartMedia_12; }
+	inline void set_shouldStartMedia_12(bool value)
+	{
+		___shouldStartMedia_12 = value;
 	}
 };
 
@@ -21608,14 +21620,12 @@ extern "C"  void LookAtCamera_LookCam_m1339097857 (LookAtCamera_t384081378 * __t
 extern "C"  void Transform_LookAt_m3968184312 (Transform_t3600365921 * __this, Transform_t3600365921 * p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.DateTime System.DateTime::get_Now()
 extern "C"  DateTime_t3738529785  DateTime_get_Now_m1277138875 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// System.DateTime System.DateTime::AddSeconds(System.Double)
-extern "C"  DateTime_t3738529785  DateTime_AddSeconds_m332574389 (DateTime_t3738529785 * __this, double p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.DateTime::get_Second()
 extern "C"  int32_t DateTime_get_Second_m2686182256 (DateTime_t3738529785 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// System.Int32 System.DateTime::Compare(System.DateTime,System.DateTime)
-extern "C"  int32_t DateTime_Compare_m2855073242 (RuntimeObject * __this /* static, unused */, DateTime_t3738529785  p0, DateTime_t3738529785  p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator MediaPlayer::playIntroAudio()
 extern "C"  RuntimeObject* MediaPlayer_playIntroAudio_m3608917595 (MediaPlayer_t1714676465 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.String::op_Equality(System.String,System.String)
+extern "C"  bool String_op_Equality_m920492651 (RuntimeObject * __this /* static, unused */, String_t* p0, String_t* p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void MediaPlayer/<playIntroAudio>c__Iterator0::.ctor()
 extern "C"  void U3CplayIntroAudioU3Ec__Iterator0__ctor_m3903914424 (U3CplayIntroAudioU3Ec__Iterator0_t2509438007 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void MediaPlayer/<playVideo>c__Iterator1::.ctor()
@@ -34116,24 +34126,12 @@ extern "C"  void MediaPlayer__ctor_m888206547 (MediaPlayer_t1714676465 * __this,
 // System.Void MediaPlayer::Start()
 extern "C"  void MediaPlayer_Start_m207418251 (MediaPlayer_t1714676465 * __this, const RuntimeMethod* method)
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (MediaPlayer_Start_m207418251_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	DateTime_t3738529785  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t3738529785_il2cpp_TypeInfo_var);
-		DateTime_t3738529785  L_0 = DateTime_get_Now_m1277138875(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_0 = L_0;
-		DateTime_t3738529785  L_1 = DateTime_AddSeconds_m332574389((DateTime_t3738529785 *)(&V_0), (30.0), /*hidden argument*/NULL);
-		__this->set_waitForTime_10(L_1);
 		__this->set_mediaStarted_11((bool)0);
-		GameObject_t1113636619 * L_2 = __this->get_screen_7();
-		NullCheck(L_2);
-		GameObject_SetActive_m796801857(L_2, (bool)0, /*hidden argument*/NULL);
+		__this->set_shouldStartMedia_12((bool)1);
+		GameObject_t1113636619 * L_0 = __this->get_screen_7();
+		NullCheck(L_0);
+		GameObject_SetActive_m796801857(L_0, (bool)0, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -34155,55 +34153,68 @@ extern "C"  void MediaPlayer_Update_m3492092940 (MediaPlayer_t1714676465 * __thi
 		bool L_1 = __this->get_mediaStarted_11();
 		if (L_1)
 		{
-			goto IL_0046;
+			goto IL_0049;
 		}
 	}
 	{
-		int32_t L_2 = DateTime_get_Second_m2686182256((DateTime_t3738529785 *)(&V_0), /*hidden argument*/NULL);
-		if (((int32_t)((int32_t)L_2%(int32_t)((int32_t)28))))
+		bool L_2 = __this->get_shouldStartMedia_12();
+		if (!L_2)
 		{
-			goto IL_0046;
+			goto IL_0049;
 		}
 	}
 	{
-		DateTime_t3738529785  L_3 = __this->get_waitForTime_10();
-		DateTime_t3738529785  L_4 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t3738529785_il2cpp_TypeInfo_var);
-		int32_t L_5 = DateTime_Compare_m2855073242(NULL /*static, unused*/, L_3, L_4, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_5) == ((uint32_t)1))))
+		int32_t L_3 = DateTime_get_Second_m2686182256((DateTime_t3738529785 *)(&V_0), /*hidden argument*/NULL);
+		if (((int32_t)((int32_t)L_3%(int32_t)((int32_t)10))))
 		{
-			goto IL_0046;
+			goto IL_0049;
 		}
 	}
 	{
 		__this->set_mediaStarted_11((bool)1);
-		RuntimeObject* L_6 = MediaPlayer_playIntroAudio_m3608917595(__this, /*hidden argument*/NULL);
-		MonoBehaviour_StartCoroutine_m3411253000(__this, L_6, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
+		Debug_Log_m4051431634(NULL /*static, unused*/, _stringLiteral551927144, /*hidden argument*/NULL);
+		RuntimeObject* L_4 = MediaPlayer_playIntroAudio_m3608917595(__this, /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m3411253000(__this, L_4, /*hidden argument*/NULL);
 	}
 
-IL_0046:
+IL_0049:
 	{
-		IL2CPP_RUNTIME_CLASS_INIT(Input_t1431474628_il2cpp_TypeInfo_var);
-		int32_t L_7 = Input_get_touchCount_m3403849067(NULL /*static, unused*/, /*hidden argument*/NULL);
-		if ((((int32_t)L_7) <= ((int32_t)1)))
+		return;
+	}
+}
+// System.Void MediaPlayer::HandleRemote(System.String)
+extern "C"  void MediaPlayer_HandleRemote_m3873689799 (MediaPlayer_t1714676465 * __this, String_t* ___message0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (MediaPlayer_HandleRemote_m3873689799_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___message0;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_1 = String_op_Equality_m920492651(NULL /*static, unused*/, L_0, _stringLiteral2707269980, /*hidden argument*/NULL);
+		if (!L_1)
 		{
-			goto IL_0070;
+			goto IL_002c;
 		}
 	}
 	{
-		bool L_8 = __this->get_mediaStarted_11();
-		if (L_8)
+		bool L_2 = __this->get_mediaStarted_11();
+		if (L_2)
 		{
-			goto IL_0070;
+			goto IL_002c;
 		}
 	}
 	{
-		__this->set_mediaStarted_11((bool)1);
-		RuntimeObject* L_9 = MediaPlayer_playIntroAudio_m3608917595(__this, /*hidden argument*/NULL);
-		MonoBehaviour_StartCoroutine_m3411253000(__this, L_9, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t3317548046_il2cpp_TypeInfo_var);
+		Debug_Log_m4051431634(NULL /*static, unused*/, _stringLiteral551927144, /*hidden argument*/NULL);
+		__this->set_shouldStartMedia_12((bool)1);
 	}
 
-IL_0070:
+IL_002c:
 	{
 		return;
 	}
