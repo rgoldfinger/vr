@@ -20,7 +20,7 @@ public class MediaPlayer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        waitForTime = System.DateTime.Now.AddSeconds(60);
+        waitForTime = System.DateTime.Now.AddSeconds(30);
         mediaStarted = false;
         screen.SetActive(false);
 
@@ -30,7 +30,11 @@ public class MediaPlayer : MonoBehaviour {
 	void Update () {
         System.DateTime now = System.DateTime.Now;
         
-        if (mediaStarted == false && now.Second % 15 == 0 &&  System.DateTime.Compare(waitForTime, now) == 1) {
+        if (mediaStarted == false && now.Second % 28 == 0 &&  System.DateTime.Compare(waitForTime, now) == 1) {
+            mediaStarted = true;
+            StartCoroutine(playIntroAudio());
+        }
+        if (Input.touchCount > 1 && mediaStarted == false) {
             mediaStarted = true;
             StartCoroutine(playIntroAudio());
         }
