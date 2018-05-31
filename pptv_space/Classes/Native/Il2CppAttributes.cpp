@@ -36892,6 +36892,13 @@ static void MediaPlayer_t1714676465_CustomAttributesCacheGenerator_MediaPlayer_p
 		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
 	}
 }
+static void MediaPlayer_t1714676465_CustomAttributesCacheGenerator_MediaPlayer_playOutroAudio_m526965512(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
+	}
+}
 static void U3CplayIntroAudioU3Ec__Iterator0_t2509438007_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
 {
 	{
@@ -36970,6 +36977,48 @@ static void U3CplayVideoU3Ec__Iterator1_t124137848_CustomAttributesCacheGenerato
 	}
 }
 static void U3CplayVideoU3Ec__Iterator1_t124137848_CustomAttributesCacheGenerator_U3CplayVideoU3Ec__Iterator1_Reset_m59886841(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
+	}
+}
+static void U3CplayOutroAudioU3Ec__Iterator2_t2540899623_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
+{
+	{
+		CompilerGeneratedAttribute_t23527886 * tmp = (CompilerGeneratedAttribute_t23527886 *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m3151881902(tmp, NULL);
+	}
+}
+static void U3CplayOutroAudioU3Ec__Iterator2_t2540899623_CustomAttributesCacheGenerator_U3CplayOutroAudioU3Ec__Iterator2__ctor_m3788519121(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
+	}
+}
+static void U3CplayOutroAudioU3Ec__Iterator2_t2540899623_CustomAttributesCacheGenerator_U3CplayOutroAudioU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m883393199(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
+	}
+}
+static void U3CplayOutroAudioU3Ec__Iterator2_t2540899623_CustomAttributesCacheGenerator_U3CplayOutroAudioU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m2756474436(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
+	}
+}
+static void U3CplayOutroAudioU3Ec__Iterator2_t2540899623_CustomAttributesCacheGenerator_U3CplayOutroAudioU3Ec__Iterator2_Dispose_m534140168(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
+	}
+}
+static void U3CplayOutroAudioU3Ec__Iterator2_t2540899623_CustomAttributesCacheGenerator_U3CplayOutroAudioU3Ec__Iterator2_Reset_m3328350042(CustomAttributesCache* cache)
 {
 	{
 		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
@@ -38546,7 +38595,7 @@ static void U3CPrivateImplementationDetailsU3E_t3057255366_CustomAttributesCache
 		CompilerGeneratedAttribute__ctor_m3151881902(tmp, NULL);
 	}
 }
-extern const CustomAttributesCacheGenerator g_AttributeGenerators[3401] = 
+extern const CustomAttributesCacheGenerator g_AttributeGenerators[3408] = 
 {
 	NULL,
 	g_mscorlib_Assembly_CustomAttributesCacheGenerator,
@@ -41793,6 +41842,7 @@ extern const CustomAttributesCacheGenerator g_AttributeGenerators[3401] =
 	ParticleExamples_t2082666202_CustomAttributesCacheGenerator_description,
 	MediaPlayer_t1714676465_CustomAttributesCacheGenerator_MediaPlayer_playIntroAudio_m3608917595,
 	MediaPlayer_t1714676465_CustomAttributesCacheGenerator_MediaPlayer_playVideo_m3724194916,
+	MediaPlayer_t1714676465_CustomAttributesCacheGenerator_MediaPlayer_playOutroAudio_m526965512,
 	U3CplayIntroAudioU3Ec__Iterator0_t2509438007_CustomAttributesCacheGenerator,
 	U3CplayIntroAudioU3Ec__Iterator0_t2509438007_CustomAttributesCacheGenerator_U3CplayIntroAudioU3Ec__Iterator0__ctor_m3903914424,
 	U3CplayIntroAudioU3Ec__Iterator0_t2509438007_CustomAttributesCacheGenerator_U3CplayIntroAudioU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2700248831,
@@ -41805,6 +41855,12 @@ extern const CustomAttributesCacheGenerator g_AttributeGenerators[3401] =
 	U3CplayVideoU3Ec__Iterator1_t124137848_CustomAttributesCacheGenerator_U3CplayVideoU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m193593851,
 	U3CplayVideoU3Ec__Iterator1_t124137848_CustomAttributesCacheGenerator_U3CplayVideoU3Ec__Iterator1_Dispose_m1177384035,
 	U3CplayVideoU3Ec__Iterator1_t124137848_CustomAttributesCacheGenerator_U3CplayVideoU3Ec__Iterator1_Reset_m59886841,
+	U3CplayOutroAudioU3Ec__Iterator2_t2540899623_CustomAttributesCacheGenerator,
+	U3CplayOutroAudioU3Ec__Iterator2_t2540899623_CustomAttributesCacheGenerator_U3CplayOutroAudioU3Ec__Iterator2__ctor_m3788519121,
+	U3CplayOutroAudioU3Ec__Iterator2_t2540899623_CustomAttributesCacheGenerator_U3CplayOutroAudioU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m883393199,
+	U3CplayOutroAudioU3Ec__Iterator2_t2540899623_CustomAttributesCacheGenerator_U3CplayOutroAudioU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m2756474436,
+	U3CplayOutroAudioU3Ec__Iterator2_t2540899623_CustomAttributesCacheGenerator_U3CplayOutroAudioU3Ec__Iterator2_Dispose_m534140168,
+	U3CplayOutroAudioU3Ec__Iterator2_t2540899623_CustomAttributesCacheGenerator_U3CplayOutroAudioU3Ec__Iterator2_Reset_m3328350042,
 	Portal_t1024540671_CustomAttributesCacheGenerator_arCam,
 	PortalExit_t1842982336_CustomAttributesCacheGenerator_PortalExit_ExitTunnel_m3982577332,
 	U3CExitTunnelU3Ec__Iterator0_t3283992693_CustomAttributesCacheGenerator,

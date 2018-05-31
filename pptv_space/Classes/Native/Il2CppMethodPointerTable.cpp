@@ -11722,12 +11722,19 @@ extern "C" void MediaPlayer_Update_m3492092940 ();
 extern "C" void MediaPlayer_HandleRemote_m3873689799 ();
 extern "C" void MediaPlayer_playIntroAudio_m3608917595 ();
 extern "C" void MediaPlayer_playVideo_m3724194916 ();
+extern "C" void MediaPlayer_playOutroAudio_m526965512 ();
 extern "C" void U3CplayIntroAudioU3Ec__Iterator0__ctor_m3903914424 ();
 extern "C" void U3CplayIntroAudioU3Ec__Iterator0_MoveNext_m4187031640 ();
 extern "C" void U3CplayIntroAudioU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2700248831 ();
 extern "C" void U3CplayIntroAudioU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m73697179 ();
 extern "C" void U3CplayIntroAudioU3Ec__Iterator0_Dispose_m2077391761 ();
 extern "C" void U3CplayIntroAudioU3Ec__Iterator0_Reset_m1020396937 ();
+extern "C" void U3CplayOutroAudioU3Ec__Iterator2__ctor_m3788519121 ();
+extern "C" void U3CplayOutroAudioU3Ec__Iterator2_MoveNext_m4247337149 ();
+extern "C" void U3CplayOutroAudioU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m883393199 ();
+extern "C" void U3CplayOutroAudioU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m2756474436 ();
+extern "C" void U3CplayOutroAudioU3Ec__Iterator2_Dispose_m534140168 ();
+extern "C" void U3CplayOutroAudioU3Ec__Iterator2_Reset_m3328350042 ();
 extern "C" void U3CplayVideoU3Ec__Iterator1__ctor_m3322608849 ();
 extern "C" void U3CplayVideoU3Ec__Iterator1_MoveNext_m3941143585 ();
 extern "C" void U3CplayVideoU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3438523103 ();
@@ -12363,7 +12370,7 @@ extern "C" void U3CLoadDeviceU3Ec__Iterator0_System_Collections_Generic_IEnumera
 extern "C" void U3CLoadDeviceU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m760405286 ();
 extern "C" void U3CLoadDeviceU3Ec__Iterator0_Dispose_m1787255812 ();
 extern "C" void U3CLoadDeviceU3Ec__Iterator0_Reset_m1523088786 ();
-extern const Il2CppMethodPointer g_MethodPointers[12344] = 
+extern const Il2CppMethodPointer g_MethodPointers[12351] = 
 {
 	Locale_GetText_m3374010885,
 	Locale_GetText_m1601577974,
@@ -24068,12 +24075,19 @@ extern const Il2CppMethodPointer g_MethodPointers[12344] =
 	MediaPlayer_HandleRemote_m3873689799,
 	MediaPlayer_playIntroAudio_m3608917595,
 	MediaPlayer_playVideo_m3724194916,
+	MediaPlayer_playOutroAudio_m526965512,
 	U3CplayIntroAudioU3Ec__Iterator0__ctor_m3903914424,
 	U3CplayIntroAudioU3Ec__Iterator0_MoveNext_m4187031640,
 	U3CplayIntroAudioU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2700248831,
 	U3CplayIntroAudioU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m73697179,
 	U3CplayIntroAudioU3Ec__Iterator0_Dispose_m2077391761,
 	U3CplayIntroAudioU3Ec__Iterator0_Reset_m1020396937,
+	U3CplayOutroAudioU3Ec__Iterator2__ctor_m3788519121,
+	U3CplayOutroAudioU3Ec__Iterator2_MoveNext_m4247337149,
+	U3CplayOutroAudioU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m883393199,
+	U3CplayOutroAudioU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m2756474436,
+	U3CplayOutroAudioU3Ec__Iterator2_Dispose_m534140168,
+	U3CplayOutroAudioU3Ec__Iterator2_Reset_m3328350042,
 	U3CplayVideoU3Ec__Iterator1__ctor_m3322608849,
 	U3CplayVideoU3Ec__Iterator1_MoveNext_m3941143585,
 	U3CplayVideoU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m3438523103,
