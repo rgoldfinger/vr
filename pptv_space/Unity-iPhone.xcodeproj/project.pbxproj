@@ -173,6 +173,7 @@
 		EFBE4F1FAF62A5911E5204D8 /* Bulk_Assembly-CSharp_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EE543109A91B4D87E54905A /* Bulk_Assembly-CSharp_1.cpp */; };
 		F16E489BAABC834A659E4C3E /* Il2CppCompilerCalculateTypeValues_3Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF4B78859017DC1A6DC2D6 /* Il2CppCompilerCalculateTypeValues_3Table.cpp */; };
 		F3C645A7BB05571930239A72 /* Bulk_UnityEngine.UnityWebRequestModule_0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45CA4C138FD2B71D6DB90582 /* Bulk_UnityEngine.UnityWebRequestModule_0.cpp */; };
+		F8564F65A5B80B875457C0A0 /* Bulk_Assembly-CSharp_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E4042B5A66B122CF6F6BEB9 /* Bulk_Assembly-CSharp_2.cpp */; };
 		F9D94EC4B67BDEDAE161C5C2 /* Bulk_mscorlib_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8056424F868E5CBBB2164D45 /* Bulk_mscorlib_2.cpp */; };
 		FC0B20A21B7A4F0B00FDFC55 /* OnDemandResources.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC0B20A11B7A4F0B00FDFC55 /* OnDemandResources.mm */; };
 		FC85CCBB16C3ED8000BAF7C7 /* CrashReporter.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC85CCB916C3ED8000BAF7C7 /* CrashReporter.mm */; };
@@ -266,6 +267,7 @@
 		77B24C52867848B621E5F471 /* Bulk_UnityEngine.UI_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_UnityEngine.UI_2.cpp; path = Classes/Native/Bulk_UnityEngine.UI_2.cpp; sourceTree = SOURCE_ROOT; };
 		77CB48F89DF22603D9F09804 /* Bulk_UnityEngine.CoreModule_0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Bulk_UnityEngine.CoreModule_0.cpp; path = Classes/Native/Bulk_UnityEngine.CoreModule_0.cpp; sourceTree = SOURCE_ROOT; };
 		78874CD5942A71C99BE9899B /* Il2CppCompilerCalculateTypeValues_12Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues_12Table.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues_12Table.cpp; sourceTree = SOURCE_ROOT; };
+		7E4042B5A66B122CF6F6BEB9 /* Bulk_Assembly-CSharp_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Bulk_Assembly-CSharp_2.cpp"; path = "Classes/Native/Bulk_Assembly-CSharp_2.cpp"; sourceTree = SOURCE_ROOT; };
 		7F36C10E13C5C673007FBDD9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		7F36C10F13C5C673007FBDD9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		7F36C11013C5C673007FBDD9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -770,6 +772,7 @@
 				175344E68F146CA3EABB8443 /* UnresolvedVirtualCallStubs.cpp */,
 				D58048EE825B66BF463D483A /* Bulk_UnityEngine.TerrainModule_0.cpp */,
 				430642B7A623996E75CE72A8 /* Bulk_UnityEngine.VideoModule_0.cpp */,
+				7E4042B5A66B122CF6F6BEB9 /* Bulk_Assembly-CSharp_2.cpp */,
 			);
 			path = Native;
 			sourceTree = "<group>";
@@ -1133,6 +1136,7 @@
 				4A56482995E4C8CBDBC472AA /* CardboardAppController.mm in Sources */,
 				6FD34AAA933DB6F8F11D81B6 /* Bulk_UnityEngine.TerrainModule_0.cpp in Sources */,
 				73414B97824E3510B6FF8621 /* Bulk_UnityEngine.VideoModule_0.cpp in Sources */,
+				F8564F65A5B80B875457C0A0 /* Bulk_Assembly-CSharp_2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1221,7 +1225,7 @@
 					CoreMotion,
 					"-weak-lSystem",
 				);
-				PRODUCT_NAME = take2;
+				PRODUCT_NAME = space2;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
@@ -1283,7 +1287,7 @@
 					CoreMotion,
 					"-weak-lSystem",
 				);
-				PRODUCT_NAME = take2;
+				PRODUCT_NAME = space2;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
@@ -1327,7 +1331,7 @@
 				INFOPLIST_FILE = "Unity-iPhone Tests/Unity-iPhone Tests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_GENERATE_MAP_FILE = YES;
-				PRODUCT_NAME = take2;
+				PRODUCT_NAME = space2;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
@@ -1381,7 +1385,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_GENERATE_MAP_FILE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = take2;
+				PRODUCT_NAME = space2;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;

@@ -8,6 +8,10 @@ public class MicInput : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        foreach (string device in Microphone.devices)
+        {
+            Debug.Log("Name: " + device);
+        }
         AudioSource source = GetComponent<AudioSource>();
         source.clip = Microphone.Start(null, true, 10, 44100);
         source.loop = true;
