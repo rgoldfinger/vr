@@ -41,7 +41,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/pptv_scene_no_narration.unity
     guid: 86c9af0fe2d364f9a97583a411d1ef25
-  - enabled: 1
+  - enabled: 0
     path: Assets/priceless_planet.unity
     guid: b773969ec12ab40afae24d668d15e7a9
+  - enabled: 1
+    path: Assets/just_music.unity
+    guid: f007270afade44770bc675e465014f37
   m_configObjects: {}

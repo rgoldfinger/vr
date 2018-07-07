@@ -303,7 +303,7 @@ extern "C" void UnityRequestQuit()
 //        [self.player play];
         return MPRemoteCommandHandlerStatusSuccess; //return MPRemoteCommandHandlerStatusCommandFailed;
     } ];
-
+ 
     commandCenter.pauseCommand.enabled = YES;
     [commandCenter.pauseCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent *event) {
         ::printf("-> pauseCommand()\n");

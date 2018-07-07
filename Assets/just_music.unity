@@ -3929,7 +3929,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4049466131849386, guid: 2c5f8d679f3e64a40a967471f4fa7030, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4049466131849386, guid: 2c5f8d679f3e64a40a967471f4fa7030, type: 2}
       propertyPath: m_LocalScale.x
@@ -3945,7 +3945,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1186787012349198, guid: 2c5f8d679f3e64a40a967471f4fa7030, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c5f8d679f3e64a40a967471f4fa7030, type: 2}
@@ -15223,9 +15223,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1603732088}
-  - component: {fileID: 1603732087}
   - component: {fileID: 1603732089}
   - component: {fileID: 1603732090}
+  - component: {fileID: 1603732087}
   m_Layer: 0
   m_Name: MediaPlayer
   m_TagString: Untagged
@@ -15239,27 +15239,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1603732086}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cbc986548f544ca6beb2cb977828328, type: 3}
+  m_Script: {fileID: 11500000, guid: abf68d99575d04fd9acabae60c516c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoClips:
-  - {fileID: 32900000, guid: c3df54a1505ce43c596f9629995deb99, type: 3}
-  - {fileID: 32900000, guid: 80179751b48b044a598b976f66a3f6fc, type: 3}
-  - {fileID: 32900000, guid: a55fc8ba2b8404c9c9f87e2bbaf85ab5, type: 3}
-  - {fileID: 32900000, guid: 943a27e9b5e694cad82a1ded6fd68eac, type: 3}
-  - {fileID: 32900000, guid: c0d561144b483449aaa0d5e7a9bf7e43, type: 3}
-  - {fileID: 32900000, guid: 9beb1b7454f0e47d3ba181acf372732c, type: 3}
-  - {fileID: 32900000, guid: 79109c1d05ae64a40a6ec8923b787a31, type: 3}
-  - {fileID: 32900000, guid: 75d0123d3998e4b80a327fa3a7e5a96a, type: 3}
-  - {fileID: 32900000, guid: 10eb8fc166b4143bd87e3ddc7bc3998c, type: 3}
-  staticClip: {fileID: 32900000, guid: 09ac1262c844d495094da2590e23e0eb, type: 3}
-  outroStaticClip: {fileID: 32900000, guid: ea0e87a64b2224682b07a44008a766f9, type: 3}
-  screen: {fileID: 910901210}
   testCube: {fileID: 659897655}
-  introClip: {fileID: 8300000, guid: af2e455bda586493383becee5520b2d3, type: 3}
-  outroClip: {fileID: 8300000, guid: 7ab7c0b59b5454567a89cccc55a5f1a3, type: 3}
 --- !u!4 &1603732088
 Transform:
   m_ObjectHideFlags: 0
@@ -15271,7 +15256,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!328 &1603732089
 VideoPlayer:
@@ -17408,6 +17393,14 @@ Prefab:
     - target: {fileID: 117300, guid: 8d218001a1e147542bc5a9058259e49f, type: 2}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19873040, guid: 8d218001a1e147542bc5a9058259e49f, type: 2}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.0002
+      objectReference: {fileID: 0}
+    - target: {fileID: 19873040, guid: 8d218001a1e147542bc5a9058259e49f, type: 2}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.0012
       objectReference: {fileID: 0}
     - target: {fileID: 19873040, guid: 8d218001a1e147542bc5a9058259e49f, type: 2}
       propertyPath: InitialModule.startSize.scalar
